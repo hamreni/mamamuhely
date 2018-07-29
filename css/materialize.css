@@ -9197,9 +9197,9 @@ textarea {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   margin:0 10%;
+  display: inline-block;
 }
 
 .btn-one:hover {
@@ -9213,6 +9213,19 @@ textarea {
 
 img {
   max-height: 40px;
-  margin: 10px
+  margin: 10px;
   margin-top: 20px
+}
+
+.btns  {
+  display: flex;
+  /* align-items in one column */
+  flex-direction: column;
+  /* add horizontal centering */
+  align-items: center;
+  justify-content: center;
+}
+
+.btns > input + input {
+  margin-top: 20px;
 }
