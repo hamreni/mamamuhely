@@ -12361,6 +12361,7 @@ $jscomp.polyfill = function (e, r, p, m) {
 
 function openCity(evt, cityName) {
   evt.preventDefault();
+  document.getElementById('szelet').value = cityName;
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {

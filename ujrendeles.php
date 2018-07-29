@@ -1,31 +1,27 @@
 <?php
 require 'functions.php';
 allow('POST');
-class MyDB extends SQLite3
-{
-    function __construct()
-    {
-        $this->open('mamamuhely.db');
-    }
-}
-$db = new MyDB();
+
+
+$db = new SQLite3('mamamuhely.db');
 
 $tipus = $_POST['tipus'];
-$comment = $_POST['comment'];
+$szelet = $_POST['szelet'];
 $date = $_POST['date'];
+$comment = $_POST['comment'];
 
-var_dump($_POST, $tipus, $comment, $date);
+$statement = $db->prepare('INSERT INTO megrendelesek VALUES (:termek, :szelet, :datum, :comment)');
+$statement->bindValue(':termek', $tipus);
+$statement->bindValue(':szelet', $szelet);
+$statement->bindValue(':comment', $comment);
+$statement->bindValue(':datum', $date);
 
 
-?>
-
-<html>
-    <meta charset="utf-8">
-    <head>
-        <title></title>
-    </head>
-    <body>
-        <h1>Új film</h1>
-
-    </body>
-</html>
+$result = $statement->execute();
+if ($result==FALSE) {
+  echo "Hiba tortent, a hiba: ".$db->lastErrorMsg();
+} else {
+  $statement->close();
+  $db->close(); 
+  redirect('index.html');
+}
