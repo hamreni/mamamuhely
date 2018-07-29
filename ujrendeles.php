@@ -1,7 +1,6 @@
 <?php
 require 'functions.php';
 allow('POST');
-
 class MyDB extends SQLite3
 {
     function __construct()
@@ -10,7 +9,13 @@ class MyDB extends SQLite3
     }
 }
 $db = new MyDB();
-var_dump($db);
+
+$tipus = $_POST['torta'];
+$comment = $_POST['comment'];
+$date = $_POST['date'];
+
+var_dump($tipus, $comment, $date);
+
 
 ?>
 
