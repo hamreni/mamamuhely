@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+  <html  lang="hu">
+    <head>
+      <meta charset="utf-8">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+      <!--Import materialize.css-->
+      
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
+      
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    </head>
+
+    <body>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.js"></script>
+
+      <nav class="grey darken-4">
+        <div class="brand-logo">Mama Műhely - Rendelés felvétel</div>
+      </nav>
+      <form action="/action_page.php" method="get" id="order"></form>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, '8 szelet')"><img src="8.svg">8 szelet</button>
+            <button class="tablinks" onclick="openCity(event, '12 szelet')"><img src="12.svg">12 szelet</button>
+            <button class="tablinks" onclick="openCity(event, '16 szelet')"><img src="16.svg">16 szelet</button>
+            <button class="tablinks" onclick="openCity(event, '20 szelet')"><img src="20.svg">20 szelet</button>
+        </div>
+
+
+        <div id="8 szelet" class="tabcontent">
+          <h3>Típus</h3>
+          <ul>
+            <li>
+                <label class="container">Belga csokoládé
+                    <input type="checkbox" value="true" name="Belga csokoládé" autocomplete="off"> 
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+            <li>
+                <label class="container">Málnás belga csokoládé
+                    <input type="checkbox" value="true" name="Málnás belga csokoládé" autocomplete="off"> 
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+            <li>
+                <label class="container">Narancsos trüffel
+                    <input type="checkbox" value="true" name="Narancsos trüffel" autocomplete="off"> 
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+            <li>
+                <label class="container">Tejkaramellás dió
+                    <input type="checkbox" value="true" name="Tejkaramellás dió" autocomplete="off"> 
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+            <li>
+                <label class="container">Vaníliás málna
+                    <input type="checkbox" value="true" name="Vaníliás málna" autocomplete="off"> 
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+            <li>
+                <label class="container">Erdei gyümölcs-mascarpone
+                    <input type="checkbox" value="true" name="Erdei gyümölcs-mascarpone" autocomplete="off"> 
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+            <li>
+                <label class="container">Sacher
+                    <input type="checkbox" value="true" name="Sacher" autocomplete="off"> 
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+            <li>
+                <label class="container">Raffaello
+                    <input type="checkbox" value="true" name="Raffaello" autocomplete="off"> 
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+            <li>
+                <label class="container">Eszterházy
+                    <input type="checkbox" value="true" name="Eszterházy" autocomplete="off"> 
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+            <li>
+                <label class="container">Citrom
+                    <input type="checkbox" value="true" name="Citrom" autocomplete="off"> 
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+            <li>
+                <label class="container">Dobos
+                    <input type="checkbox" value="true" name="Dobos" autocomplete="off"> 
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+            <li>
+                <label class="container">Nutella
+                    <input type="checkbox" value="true" name="Nutella" autocomplete="off"> 
+                    <span class="checkmark"></span>
+                </label>
+            </li>
+          </ul>          
+        </div>
+          
+        <div id="12 szelet" class="tabcontent">
+          <h3>Típus</h3>
+          <ul>
+              <li>
+                  <label class="container">Belga csokoládé
+                      <input type="checkbox" value="true" name="Belga csokoládé" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Málnás belga csokoládé
+                      <input type="checkbox" value="true" name="Málnás belga csokoládé" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Narancsos trüffel
+                      <input type="checkbox" value="true" name="Narancsos trüffel" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Tejkaramellás dió
+                      <input type="checkbox" value="true" name="Tejkaramellás dió" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Vaníliás málna
+                      <input type="checkbox" value="true" name="Vaníliás málna" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Erdei gyümölcs-mascarpone
+                      <input type="checkbox" value="true" name="Erdei gyümölcs-mascarpone" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Sacher
+                      <input type="checkbox" value="true" name="Sacher" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Raffaello
+                      <input type="checkbox" value="true" name="Raffaello" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Eszterházy
+                      <input type="checkbox" value="true" name="Eszterházy" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Citrom
+                      <input type="checkbox" value="true" name="Citrom" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Dobos
+                      <input type="checkbox" value="true" name="Dobos" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Nutella
+                      <input type="checkbox" value="true" name="Nutella" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Tiramisu
+                      <input type="checkbox" value="true" name="Tiramisu" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Isler evolúció
+                      <input type="checkbox" value="true" name="Isler evolúció" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Karamellás körte
+                      <input type="checkbox" value="true" name="Karamellás körte" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Toffifee
+                      <input type="checkbox" value="true" name="Toffifee" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Citromos-joghurt
+                      <input type="checkbox" value="true" name="Citromos-joghurt" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Citromos túró
+                      <input type="checkbox" value="true" name="Citromos túró" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Áfonyás sajtotorta
+                      <input type="checkbox" value="true" name="Áfonyás sajtotorta" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Málnás sajtotorta
+                      <input type="checkbox" value="true" name="Málnás sajtotorta" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Nutellás sajtotorta
+                      <input type="checkbox" value="true" name="Nutellás sajtotorta" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Fruit rouge
+                      <input type="checkbox" value="true" name="Fruit rouge" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Snickers
+                      <input type="checkbox" value="true" name="Snickers" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+          </ul>          
+        </div>
+        
+        <div id="16 szelet" class="tabcontent">
+          <h3>Típus</h3>
+          <ul>
+              <li>
+                  <label class="container">Belga csokoládé
+                      <input type="checkbox" value="true" name="Belga csokoládé" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Málnás belga csokoládé
+                      <input type="checkbox" value="true" name="Málnás belga csokoládé" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Narancsos trüffel
+                      <input type="checkbox" value="true" name="Narancsos trüffel" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Tejkaramellás dió
+                      <input type="checkbox" value="true" name="Tejkaramellás dió" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Vaníliás málna
+                      <input type="checkbox" value="true" name="Vaníliás málna" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Erdei gyümölcs-mascarpone
+                      <input type="checkbox" value="true" name="Erdei gyümölcs-mascarpone" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Sacher
+                      <input type="checkbox" value="true" name="Sacher" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Raffaello
+                      <input type="checkbox" value="true" name="Raffaello" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Eszterházy
+                      <input type="checkbox" value="true" name="Eszterházy" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Citrom
+                      <input type="checkbox" value="true" name="Citrom" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Dobos
+                      <input type="checkbox" value="true" name="Dobos" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Nutella
+                      <input type="checkbox" value="true" name="Nutella" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Tiramisu
+                      <input type="checkbox" value="true" name="Tiramisu" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Isler evolúció
+                      <input type="checkbox" value="true" name="Isler evolúció" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Karamellás körte
+                      <input type="checkbox" value="true" name="Karamellás körte" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Toffifee
+                      <input type="checkbox" value="true" name="Toffifee" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Citromos-joghurt
+                      <input type="checkbox" value="true" name="Citromos-joghurt" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+          </ul> 
+        </div>
+
+        <div id="20 szelet" class="tabcontent">
+          <h3>Típus</h3>
+          <ul>
+              <li>
+                  <label class="container">Belga csokoládé
+                      <input type="checkbox" value="true" name="Belga csokoládé" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Málnás belga csokoládé
+                      <input type="checkbox" value="true" name="Málnás belga csokoládé" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Narancsos trüffel
+                      <input type="checkbox" value="true" name="Narancsos trüffel" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Tejkaramellás dió
+                      <input type="checkbox" value="true" name="Tejkaramellás dió" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Vaníliás málna
+                      <input type="checkbox" value="true" name="Vaníliás málna" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Erdei gyümölcs-mascarpone
+                      <input type="checkbox" value="true" name="Erdei gyümölcs-mascarpone" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Sacher
+                      <input type="checkbox" value="true" name="Sacher" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Raffaello
+                      <input type="checkbox" value="true" name="Raffaello" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Eszterházy
+                      <input type="checkbox" value="true" name="Eszterházy" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Citrom
+                      <input type="checkbox" value="true" name="Citrom" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Dobos
+                      <input type="checkbox" value="true" name="Dobos" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+              <li>
+                  <label class="container">Nutella
+                      <input type="checkbox" value="true" name="Nutella" autocomplete="off"> 
+                      <span class="checkmark"></span>
+                  </label>
+              </li>
+          </ul> 
+        </div>
+      
+      <div class="comment">
+        <h3>Megjegyzés: </h3>       
+        <textarea autocomplete="off" name="comment" form="order" maxlength="50"></textarea> 
+
+      </div>
+
+      <div class="date-block">
+        <h3>Elkészítés dátuma:</h3>
+        <p><input autocomplete="off" type= "date"  name="date"></p>
+        <!-- <p><input autocomplete="off" placeholder="Hónap" oninput="this.className = ''" name="nn"></p> -->
+        <!-- <p><input autocomplete="off" placeholder="Év" oninput="this.className = ''" name="yyyy"></p> -->
+      </div>
+
+      <input class="btn-one" type="submit" value="FELVÉTEL" name="Submit">
+
+      </form>
+    </body>
+  </html>
