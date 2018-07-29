@@ -10,11 +10,11 @@ class MyDB extends SQLite3
 }
 $db = new MyDB();
 
-$tipus = $_POST['torta'];
+$tipus = $_POST['tipus'];
 $comment = $_POST['comment'];
 $date = $_POST['date'];
 
-var_dump($tipus, $comment, $date);
+var_dump($_POST, $tipus, $comment, $date);
 
 
 ?>
